@@ -81,7 +81,7 @@
 					?>
                 <tr id="row_<?php echo $row->ID;?>">
                   <td valign="middle"><?php echo date_formats($row->dated, 'd/m/Y');?><br />
-                  <?php echo ($row->ip_address)?'<a href="http://domaintools.com/'.$row->ip_address.'" target="_blank">'.$row->ip_address.'</a>':'';?>
+                    <?php echo (isset($row->ip_address) && $row->ip_address != '') ? '<a href="http://domaintools.com/'.$row->ip_address.'" target="_blank">'.$row->ip_address.'</a>' : ''; ?>
                   </td>
                   <td valign="middle"><a href="<?php echo base_url('admin/employers/details/'.$row->ID);?>"><?php echo $row->first_name.' '.$row->last_name;?></a></td>
                   <td valign="middle"><?php echo $row->email;?></td>

@@ -217,12 +217,12 @@ class Employers extends CI_Controller {
 		);
 		//Pagination starts
 		$total_rows = $this->employers_model->search_record_count('pp_employers',$search_data);
-		$config = pagination_configuration_search(base_url("admin/employers/search/?".$url_params), $total_rows, 50, 3, 5, true);
+		$config = pagination_configuration_search(base_url("admin/employers/search?".$url_params), $total_rows, 9, 3, 5, true);
 		
 		$this->pagination->initialize($config);
-        $page = $this->input->get('per_page');
+        $page = (int)$this->input->get('per_page');
 		$page_num = $page-1;
-		$page_num = ($page_num<0)?'0':$page_num;
+		$page_num = ($page_num<0)?0:$page_num;
 		$page = $page_num*$config["per_page"];
 		$data["links"] = $this->pagination->create_links();
 		$data["total_rows"] = $total_rows;
