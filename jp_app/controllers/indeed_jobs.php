@@ -42,9 +42,24 @@ class Indeed_Jobs extends CI_Controller {
         log_message('debug', 'Indeed API params: ' . print_r($params, true));
         
         try {
+            // $results = $this->indeed->search($params);
+            // log_message('debug', 'Indeed API response: ' . print_r($results, true));
+            // return is_array($results) ? $results : [];
+
+
             $results = $this->indeed->search($params);
-            log_message('debug', 'Indeed API response: ' . print_r($results, true));
+
+            // echo "<pre>";
+            //  print_r($params);
+            // print_r($results);
+            // echo "</pre>";
+            // exit;
+
             return is_array($results) ? $results : [];
+            
+
+
+
         } catch (Exception $e) {
             log_message('error', 'Indeed API error: ' . $e->getMessage());
             return [];

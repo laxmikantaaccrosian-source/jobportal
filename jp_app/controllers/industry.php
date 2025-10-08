@@ -8,6 +8,11 @@ class Industry extends CI_Controller {
     }
 	
 	public function index(){
+		    // echo "<pre>";
+            //  print_r(22);
+            // echo "</pre>";
+            // exit;
+
 		$data['ads_row'] = $this->ads;
 		if($this->uri->segment(2)==''){
 			redirect(base_url());

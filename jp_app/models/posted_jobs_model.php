@@ -485,6 +485,10 @@ ORDER BY pj.ID DESC;
     }	
 	
 	public function job_search_by_industry($param, $per_page, $page) {
+        // echo "<pre>";
+        //      print_r($param);
+        //     echo "</pre>";
+        //     exit;
        $Q = $this->db->query('CALL job_search_by_industry("'.$param.'", '.$page.', '.$per_page.')');
         if ($Q->num_rows > 0) {
             $return = $Q->result();

@@ -177,10 +177,10 @@ class Job_Seekers extends CI_Controller {
 		}
 		//Pagination starts
 		$total_rows = $this->job_seekers_model->search_record_count('pp_job_seekers',$search_data);
-		$config = pagination_configuration_search(base_url("admin/job_seekers/search/".$making_url.'/?'), $total_rows, 50, $segment, 5, true);
+		$config = pagination_configuration_search(base_url("admin/job_seekers/search/".$making_url), $total_rows, 50, 0, 5, true);
 		
 		$this->pagination->initialize($config);
-        $page = $this->input->get('per_page');
+        $page = (int)$this->input->get('per_page');
 		$page_num = $page-1;
 		$page_num = ($page_num<0)?'0':$page_num;
 		$page = $page_num*$config["per_page"];

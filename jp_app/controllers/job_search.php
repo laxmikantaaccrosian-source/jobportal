@@ -9,6 +9,8 @@ class Job_Search extends CI_Controller {
 	
 	public function index()
 	{
+		// echo "he";
+		// exit;
 		$data['ads_row'] = $this->ads;
 		if($_POST){
 			$this->search();

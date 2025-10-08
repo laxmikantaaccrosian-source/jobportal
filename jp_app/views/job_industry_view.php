@@ -14,14 +14,14 @@
 <?php $this->load->view('common/header'); ?>
 <!--/Header--> 
 <!--Search Block-->
-  <div class="top-colSection">
+  <!-- <div class="top-colSection">
   <div class="container">
     <div class="row">
-      <?php $this->load->view('common/home_search');?>
+      <?php //$this->load->view('common/home_search');?>
       <div class="clear"></div>
     </div>
   </div>
-</div>
+</div> -->
 <!--/Search Block--> 
 <!--Latest Jobs Block-->
 <div class="container"> 
@@ -79,10 +79,10 @@
     <!--Pagination-->
     <div class="paginationWrap"> <?php echo ($result)?$links:'';?> </div>
   </div>
-  <?php $this->load->view('common/right_ads');?>
+  <?php // $this->load->view('common/right_ads');?>
 </div>
 <!--/Latest Jobs Block-->
-<?php $this->load->view('common/bottom_ads');?>
+<?php // $this->load->view('common/bottom_ads');?>
 <!--Footer-->
 <?php $this->load->view('common/footer'); ?>
 <?php $this->load->view('common/before_body_close'); ?>

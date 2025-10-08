@@ -17,12 +17,14 @@
               <li <?php echo active_link('search-resume');?>><a href="<?php echo base_url('search-resume');?>" title="Search Resume">Search Resume</a></li>
               <li <?php echo active_link('contact-us');?>><a href="<?php echo base_url('contact-us');?>" title="Contact Us">Contact Us</a></li>
               <li <?php echo active_link('indeed_jobs');?>><a href="<?php echo base_url('indeed_jobs');?>" title="Indeed Jobs">Indeed Jobs</a></li>
+              <li <?php echo active_link('government_jobs');?>><a href="<?php echo base_url('government_jobs');?>" title="Government Jobs">Government Job</a></li>
               <?php elseif($this->session->userdata('is_job_seeker')==TRUE):?>
               <li <?php echo active_link('');?>><a href="<?php echo base_url();?>"><i class="fa fa-home" aria-hidden="true"></i></a></li>
               <li <?php echo active_link('jobseeker');?>><a href="<?php echo base_url('jobseeker/dashboard');?>" title="My Dashboard">My Dashboard</a> </li>
               <li <?php echo active_link('search-jobs');?>><a href="<?php echo base_url('search-jobs');?>" title="Search Jobs">Search Jobs</a></li>
               <li <?php echo active_link('contact-us');?>><a href="<?php echo base_url('contact-us');?>" title="Contact Us">Contact Us</a></li>
               <li <?php echo active_link('indeed_jobs');?>><a href="<?php echo base_url('indeed_jobs');?>" title="Indeed Jobs">Indeed Jobs</a></li>
+              <li <?php echo active_link('government_jobs');?>><a href="<?php echo base_url('government_jobs');?>" title="Government Jobs">Government Job</a></li>
               <?php else:?>
               <li <?php echo active_link('');?>><a href="<?php echo base_url();?>"><i class="fa fa-home" aria-hidden="true"></i></a></li>
               <li <?php echo active_link('search-jobs');?>><a href="<?php echo base_url('search-jobs');?>" title="Search Government jobs in USA">Search a Job</a> </li>
@@ -30,6 +32,7 @@
               <li <?php echo active_link('about-us.html');?>><a href="<?php echo base_url('about-us.html');?>" title="USA jobs free website">About Us</a></li>
               <li <?php echo active_link('contact-us');?>><a href="<?php echo base_url('contact-us');?>" title="Contact Us">Contact Us</a></li>
               <li <?php echo active_link('indeed_jobs');?>><a href="<?php echo base_url('indeed_jobs');?>" title="Indeed Jobs">Indeed Jobs</a></li>
+              <li <?php echo active_link('government_jobs');?>><a href="<?php echo base_url('government_jobs');?>" title="Government Jobs">Government Job</a></li>
               <?php endif;?>
             </ul>
           </div>
@@ -54,4 +57,5 @@
 		
         <div class="clearfix"></div>
   </div>
+  
 </div>

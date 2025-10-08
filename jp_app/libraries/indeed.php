@@ -1,5 +1,8 @@
 <?php
+// echo "from indeed";
+// exit;
 class Indeed{
+    
     const DEFAULT_FORMAT = "json";
     const API_SEARCH_ENDPOINT = "http://api.indeed.com/ads/apisearch";
     const API_JOBS_ENDPOINT = "http://api.indeed.com/ads/apigetjobs";

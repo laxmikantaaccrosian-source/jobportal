@@ -37,10 +37,10 @@
       <h5>Popular Industries</h5>
       <ul class="quicklinks">
         <?php
-			$res_inds = $this->industries_model->get_top_industries();
-			if($res_inds):
-				foreach($res_inds as $row_inds):
-		?>
+          $res_inds = $this->industries_model->get_top_industries();
+          if($res_inds):
+            foreach($res_inds as $row_inds):
+        ?>
         <li><a href="<?php echo base_url('industry/'.$row_inds->slug);?>" title="<?php echo $row_inds->industry_name;?> Jobs"><?php echo $row_inds->industry_name;?> Jobs</a></li>
         <?php 
 

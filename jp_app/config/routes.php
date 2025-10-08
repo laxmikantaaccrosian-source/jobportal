@@ -69,3 +69,6 @@ $route['admin/posted_jobs/(:num)'] = 'admin/posted_jobs/index/$1';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
+
+$route['indeed-jobs'] = 'indeed_jobs/index';
+$route['government_jobs'] = 'government_jobs/index';
