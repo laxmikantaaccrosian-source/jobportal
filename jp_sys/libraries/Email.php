@@ -32,8 +32,8 @@ class CI_Email {
 	var	$mailpath		= "/usr/sbin/sendmail";	// Sendmail path
 	var	$protocol		= "smtp";	// mail/sendmail/smtp
 	var	$smtp_host		= "smtp.gmail.com";		// SMTP Server.  Example: mail.earthlink.net
-	var	$smtp_user		= "laxmikantabarik76@gmail.com";		// SMTP Username
-	var	$smtp_pass		= "nbny xryx lurv wkzd";		// SMTP Password
+	var	$smtp_user		= "laxmikanta.accrosian@gmail.com";		// SMTP Username
+	var	$smtp_pass		= "nzvhtdgqlvqzbnok";		// SMTP Password
 	var	$smtp_port		= "587";		// SMTP Port
 	var	$smtp_timeout	= 5;		// SMTP Timeout in seconds
 	var	$smtp_crypto	= "tls";		// SMTP Encryption. Can be null, tls or ssl.
@@ -46,7 +46,7 @@ class CI_Email {
 	var $alt_message	= '';		// Alternative message for HTML emails
 	var	$validate		= FALSE;	// TRUE/FALSE.  Enables email validation
 	var	$priority		= "3";		// Default priority (1 - 5)
-	var	$newline		= "\n";		// Default newline. "\r\n" or "\n" (Use "\r\n" to comply with RFC 822)
+	var	$newline		= "\r\n";		// Default newline. "\r\n" or "\n" (Use "\r\n" to comply with RFC 822)
 	var $crlf			= "\n";		// The RFC 2045 compliant CRLF for quoted-printable is "\r\n".  Apparently some servers,
 									// even on the receiving end think they need to muck with CRLFs, so using "\n", while
 									// distasteful, is the only thing that seems to work for all environments.

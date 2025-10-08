@@ -1,0 +1,27 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2025-10-06 05:12:02 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:28:19 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:28:47 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:28:51 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:35:12 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:35:13 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:35:16 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:42:53 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:42:54 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:46:49 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:46:59 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:47:03 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:47:06 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:47:38 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:47:39 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:47:40 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:47:40 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:47:46 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:47:46 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:47:46 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:47:47 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:47:47 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:48:33 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 05:48:35 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72
+ERROR - 2025-10-06 06:47:04 --> Severity: 8192  --> Optional parameter $level declared before required parameter $msg is implicitly treated as a required parameter C:\xampp\htdocs\jobportal\jp_sys\libraries\Log.php 72

@@ -56,7 +56,7 @@ $autoload['libraries'] = array('database', 'session', 'Form_validation', 'MY_For
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url', 'form', 'inflector', 'security', 'date', 'html', 'my_static_functions_helper','download', 'file', 'text', 'my_admin_search_helper', 'my_captcha_helper');
+$autoload['helper'] = array('url', 'form', 'inflector', 'security', 'date', 'html', 'my_static_functions_helper','download', 'file', 'text', 'my_admin_search_helper', 'my_captcha_helper','email');
 /*
 | -------------------------------------------------------------------
 |  Auto-load Config files

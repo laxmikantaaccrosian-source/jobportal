@@ -3,8 +3,7 @@
     <div class="col-md-3">
       <img src="<?php echo base_url('public/images/logo3.png');?>" alt="USA jobs website" />
       <br><br>
-      <p>Empowering Businesses with Innovative IT Solutions
-         At Accrosian, we are a trusted IT software agency delivering custom software development, cloud services, data analytics, cybersecurity, and web development.<br>
+      <p>Job portal website connects jobseekers and employers, offering resumes, job listings, applications, and career resources efficiently.<br>
          <br>
          Contact Us: (+91) 8917355825 | info@accrosian.com<br>
          Locations: Hyderabad & Bhubaneswar, India</p>
@@ -54,18 +53,18 @@
     <div class="col-md-4">
       <h5>Popular Cities</h5>
       <ul class="citiesList">
-        <li><a href="<?php echo base_url('search/new-york');?>" title="Jobs in New York">New York</a></li>
-        <li><a href="<?php echo base_url('search/los-angeles');?>" title="Jobs in 	Los Angeles">Los Angeles</a></li>
-        <li><a href="<?php echo base_url('search/chicago');?>" title="Jobs in Chicago">Chicago</a></li>
-        <li><a href="<?php echo base_url('search/houston');?>" title="Jobs in Houston">Houston</a></li>
-        <li><a href="<?php echo base_url('search/san-diego');?>" title="Jobs in San Diego">San Diego</a></li>
-        <li><a href="<?php echo base_url('search/san-jose');?>" title="Jobs in San Jose">San Jose</a></li>
-        <li><a href="<?php echo base_url('search/austin');?>" title="Jobs in Austin">Austin</a></li>
-        <li><a href="<?php echo base_url('search/san-francisco');?>" title="Jobs in San Francisco">	San Francisco</a></li>
-        <li><a href="<?php echo base_url('search/columbus');?>" title="Jobs in Columbus">Columbus</a></li>
-        <li><a href="<?php echo base_url('search/boston');?>" title="Jobs in Boston">Boston</a></li>
-        <li><a href="<?php echo base_url('search/washington');?>" title="Jobs in Washington">Washington</a></li>
-        <li><a href="<?php echo base_url('search/las-vegas');?>" title="Jobs in Las Vegas">Las Vegas</a></li>
+        <li><a href="<?php echo base_url('search/new-york');?>" title="Jobs in Bengaluru">Bengaluru</a></li>
+        <li><a href="<?php echo base_url('search/los-angeles');?>" title="Jobs in Hyderabad">Hyderabad</a></li>
+        <li><a href="<?php echo base_url('search/chicago');?>" title="Jobs in Chennai">Chennai</a></li>
+        <li><a href="<?php echo base_url('search/houston');?>" title="Jobs in Delhi-NCR">Delhi-NCR</a></li>
+        <li><a href="<?php echo base_url('search/san-diego');?>" title="Jobs in Mumbai">Mumbai</a></li>
+        <li><a href="<?php echo base_url('search/san-jose');?>" title="Jobs in Pune">Pune</a></li>
+        <li><a href="<?php echo base_url('search/austin');?>" title="Jobs in Kolkata">Kolkata</a></li>
+        <li><a href="<?php echo base_url('search/san-francisco');?>" title="Jobs in Chandigarh">Chandigarh</a></li>
+        <li><a href="<?php echo base_url('search/columbus');?>" title="Jobs in Kochi">Kochi</a></li>
+        <li><a href="<?php echo base_url('search/boston');?>" title="Jobs in Bhubaneswar">Bhubaneswar</a></li>
+        <li><a href="<?php echo base_url('search/washington');?>" title="Jobs in Nagpur">Nagpur</a></li>
+        <li><a href="<?php echo base_url('search/las-vegas');?>" title="Jobs in Visakhapatnam">Visakhapatnam</a></li>
       </ul>
       <div class="clear"></div>
     </div>

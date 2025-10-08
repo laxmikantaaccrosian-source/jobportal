@@ -56,6 +56,8 @@ $route['candidate/(:any)'] = 'candidate/index/$1';
 $route['industry/(:any)'] = 'industry/index/$1';
 $route['employer-signup'] = 'employer_signup';
 $route['jobseeker-signup'] = 'jobseeker_signup';
+$route['jobseeker/subscription'] = 'jobseeker/add_subscription';
+$route['jobseeker/subscription/(:any)'] = 'jobseeker/add_subscription/$1';
 $route['contact-us'] = 'contact_us';
 //Employer Section
 $route['employer/job_applications/(:any)'] 	= 'employer/job_applications/index/$1';
