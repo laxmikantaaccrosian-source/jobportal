@@ -71,3 +71,15 @@ $route['admin/posted_jobs/(:num)'] = 'admin/posted_jobs/index/$1';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
+
+// Government Jobs Admin Routes
+$route['admin/government-jobs'] = 'Admin_government_jobs';
+$route['admin/government-jobs/add'] = 'Admin_government_jobs/add';
+$route['admin/government-jobs/edit/(:any)'] = 'Admin_government_jobs/edit/$1';
+$route['admin/government-jobs/delete/(:any)'] = 'Admin_government_jobs/delete/$1';
+
+// Frontend Government Jobs Routes
+$route['government-jobs'] = 'Government_jobs';
+$route['government-jobs/search'] = 'Government_jobs/search';
+$route['government-jobs/search/(:any)'] = 'Government_jobs/search_results/$1';
+$route['government-jobs/detail/(:any)'] = 'Government_jobs/detail/$1';

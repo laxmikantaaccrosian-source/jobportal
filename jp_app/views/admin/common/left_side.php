@@ -7,6 +7,7 @@
       <li> <a href="<?php echo base_url('admin/employers');?>"><i class="fa fa-angle-double-right"></i><span>Employers / Companies</span> </a> </li>
       <li> <a href="<?php echo base_url('admin/job_seekers');?>"><i class="fa fa-angle-double-right"></i><span>Manage Jobseekers</span> </a> </li>
       <li> <a href="<?php echo base_url('admin/posted_jobs');?>"><i class="fa fa-angle-double-right"></i><span>Manage Posted Jobs</span> </a> </li>
+      <li> <a href="<?php echo base_url('admin/government-jobs');?>"><i class="fa fa-angle-double-right"></i><span>Manage Government Jobs</span> </a> </li>
       <li> <a href="<?php echo base_url('admin/pages');?>"><i class="fa fa-angle-double-right"></i><span>CMS</span> </a> </li>
       <li> <a href="<?php echo base_url('admin/invite_employer');?>"><i class="fa fa-angle-double-right"></i><span>Invite Employer</span> </a> </li>
       <li> <a href="<?php echo base_url('admin/invite_jobseeker');?>"><i class="fa fa-angle-double-right"></i><span>Invite Jobseeker</span> </a> </li>

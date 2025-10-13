@@ -60,7 +60,7 @@
               </tr>
               <tr>
                 <td align="center"><a href="<?php echo base_url('admin/stories');?>"><i class="fa awesome_style fa-thumbs-up"></i><br>
-Success Stories</a></td>
+                 Success Stories</a></td>
                 <td align="center"><a href="<?php echo base_url('admin/invite_employer');?>"><i class="fa awesome_style fa-envelope"></i><br>
                   Invite Employer</a></td>
                 <td align="center"><a href="<?php echo base_url('admin/invite_jobseeker');?>"><i class="fa awesome_style fa-users"></i> <br>
@@ -68,7 +68,7 @@ Success Stories</a></td>
                 <td align="center"><a href="<?php echo base_url('admin/email_template');?>"><i class="fa fa-envelope awesome_style"></i><br>
                   Email Templates</a></td>
                 <td align="center"><a href="<?php echo base_url('admin/ads');?>"><i class="fa awesome_style fa-bullhorn"></i><br>
-Ads</a></td>
+                  Ads</a></td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
@@ -103,6 +103,8 @@ Manage Skills</a></td>
                   Manage Newsletters</a></td>
                 <td align="center"><a href="<?php echo base_url('admin/job_alert_queue');?>"><i class="fa fa-envelope awesome_style"></i><br>
                   Job Alert Queue</a></td>
+                <td align="center"><a href="<?php echo base_url('admin/government-jobs');?>"><i class="fa awesome_style fa-bank"></i><br>
+Government Jobs</a></td>
                 <td align="center"></td>
                 <td align="center"></td>
               </tr>
