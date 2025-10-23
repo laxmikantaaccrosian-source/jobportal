@@ -5,6 +5,6 @@
       <li><a href="<?php echo base_url('jobseeker/matching_jobs');?>" class="innerfetbox <?php echo is_active_like($this->uri->segment(2),'matching_jobs');?>"><i class="fa fa-users"></i> <span>Job Matching</span></a></li>
       <li><a href="<?php echo base_url('jobseeker/add_skills');?>" class="innerfetbox <?php echo is_active_like($this->uri->segment(2),'add_skills');?>"><i class="fa fa-users"></i> <span>Manage Skills</span></a></li>
       <li><a href="<?php echo base_url('jobseeker/change_password');?>" class="innerfetbox <?php echo is_active_like($this->uri->segment(2),'change_password');?>"><i class="fa fa-lock"></i> <span>Change Password</span></a></li>
-      <li><a href="<?php echo base_url('jobseeker/add_subscription');?>" class="innerfetbox <?php echo is_active_like($this->uri->segment(2),'change_password');?>"><i class="fa fa-credit-card"></i> <span>Subscription</span></a></li>
+      <!-- <li><a href="<?php echo base_url('jobseeker/add_subscription');?>" class="innerfetbox <?php echo is_active_like($this->uri->segment(2),'change_password');?>"><i class="fa fa-credit-card"></i> <span>Subscription</span></a></li> -->
       <div class="clear"></div>
     </ul>
