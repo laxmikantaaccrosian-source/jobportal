@@ -15,7 +15,7 @@ class Dashboard extends CI_Controller {
 		$row = $this->employers_model->get_employer_by_id($this->session->userdata('user_id'));
 		//Jobs by company
 		$result_posted_jobs = $this->posted_jobs_model->get_active_deactive_posted_job_by_company_id($row->company_ID, 5, 0);
-		$total_opened_jobs = count($result_posted_jobs);
+		$total_opened_jobs = is_array($result_posted_jobs) ? count($result_posted_jobs) : 0;
 		
 		//Applied Jobs by Employer ID
 		$result_applied_jobs = $this->applied_jobs_model->get_applied_job_by_employer_id($row->ID, 5, 0);

@@ -15,7 +15,7 @@
       <script src="<?php //echo base_url('public/js/html5shiv.js');?>"></script>
       <script src="<?php //echo base_url('public/js/respond.min.js');?>"></script>
     <![endif]-->
-<link rel="shortcut icon" href="<?php echo base_url('public/images/favicon.ico'); ?>">
+<link rel="shortcut icon" href="<?php echo base_url('public/images/favicons.ico'); ?>">
 <script>
 var baseUrl = '<?php echo base_url();?>';
 </script>

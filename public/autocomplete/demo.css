@@ -646,25 +646,24 @@ div.demo-description {
 #widget-docs .ui-widget-content a:active {
   color: #0b559b;
 }
-
-.ui-autocomplete-input {
-  background-color: #ffffff;
-  background-image: none;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-  color: #555555;
-  display: block;
-  font-size: 14px;
-  height: 34px;
-  line-height: 1.42857;
-  padding: 6px 12px;
-  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-  width: 100%;
+/* Fix autocomplete dropdown overlapping */
+.ui-autocomplete {
+  position: absolute;
+  z-index: 9999 !important;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.ui-autocomplete.ui-menu.ui-widget.ui-widget-content.ui-corner-all {
-  z-index: 9999 !important;
-  height: 200px;
-  overflow: auto;
+/* Improve the suggestion look */
+.ui-menu-item-wrapper {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.ui-menu-item-wrapper:hover {
+  background-color: #f0f0f0;
 }

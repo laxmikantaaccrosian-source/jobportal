@@ -1,288 +1,441 @@
-<!doctype html>
-<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
-<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
-<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!DOCTYPE html>
+<!--[if IE 6]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8]><html lang="en-us" class="ie8"> <![endif]-->
 <!--[if (gt IE 7)|!(IE)]><!-->
 <html lang="en-us">
-<!--<![endif]-->
-<head>
-<meta charset="utf-8">
-<title>Job Portal Guide</title>
-<meta name="description" content="THANK YOU FOR PURCHASING OUR JOB PORTAL! Here are some basics on installing, configuring and customizing the job portal, BEFORE WE GO The job portal and the sample data is provided "as is". Customizing code and other design /development related issues can be done as freelance work on a $20-50 hourly rate only with Paypal and/or Skrill, if JobPortal's available. If you are new to programming, please understand I cannot fix your site for free. Job Portal would love to help everyone but there is no time. I suggest reading documentation available online regarding using PHP, server requirements, etc. Thank you! Job Portal Team">
-<meta name="author" content="">
-<meta name="copyright" content="">
-<meta name="generator" content="Documenter v1.2">
-<meta name="date" content="2016-03-01T00:00:00+02:00">
-<link rel="stylesheet" href="css/documenter_style.css" media="all">
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-<script src="js/jquery.1.6.4.js"></script>
-<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
-<script src="js/jquery.easing.js"></script>
-<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
-<script src="js/shCore.js"></script>
-<script src="js/shBrushXml.js"></script>
-<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
-<script>document.createElement('section');var duration=500,easing='swing';</script>
-<script src="js/script.js"></script>
-<style>
-html {
-	background-color: #FFFFFF;
-	color: #383838;
-}
-		::-moz-selection {
-background:#444444;
-color:#DDDDDD;
-}
-::selection {
- background: #444444;
- color: #DDDDDD;
-}
-#documenter_sidebar #documenter_logo {
-	background-image: url(assets/logo.png);
-}
-a {
-	color: #0000FF;
-}
-hr {
-	border-top: 1px solid #EBEBEB;
-	border-bottom: 1px solid #FFFFFF;
-}
-#documenter_sidebar, #documenter_sidebar ol a {
-	background-color: #DDDDDD;
-	color: #222222;
-}
-#documenter_sidebar ol a {
-	-webkit-text-shadow: 1px 1px 0px #EEEEEE;
-	-moz-text-shadow: 1px 1px 0px #EEEEEE;
-	text-shadow: 1px 1px 0px #EEEEEE;
-}
-#documenter_sidebar ol {
-	border-top: 1px solid #AAAAAA;
-}
-#documenter_sidebar ol a {
-	border-top: 1px solid #EEEEEE;
-	border-bottom: 1px solid #AAAAAA;
-	color: #444444;
-}
-#documenter_sidebar ol a:hover {
-	background: #444444;
-	color: #DDDDDD;
-	border-top: 1px solid #444444;
-}
-#documenter_sidebar ol a.current {
-	background: #444444;
-	color: #DDDDDD;
-	border-top: 1px solid #444444;
-}
-#documenter_copyright {
-	display: block !important;
-	visibility: visible !important;
-}
-</style>
-</head>
-<body>
-<div id="documenter_sidebar"> <a href="#documenter_cover" id="documenter_logo"></a>
-  <ol id="documenter_nav">
-    <li><a class="current" href="#documenter_cover">Start</a></li>
-    <li><a href="#install_quickstart">Install Quickstart</a></li>
-    <li><a href="#config">Site Configuration</a></li>
-    <li><a href="#header">Hedaer</a></li>
-    <li><a href="#footer">Footer</a></li>
-    <li><a href="#ads">Manages Ads</a></li>
-    <li><a href="#admin">Admin Panel</a></li>
-    <li><a href="#updates">Updates</a></li>
-    <li><a href="#credits">Sources and Credits</a></li>
-  </ol>
-  <div id="documenter_copyright">Copyright &copy; 2016</div>
-</div>
-<div id="documenter_content">
-  <section id="documenter_cover">
-    <h1>Job Portal Guide</h1>
-    <hr>
-    <ul>
-      <li>Created: 12/03/2016</li>
-      <li>Updated: 24/08/2016</li>
-      <li>By: Bizz-manager</li>
-      <li>Email: <a href="mailto:Sopstech@gmail.com"></a>Sopstech@gmail.com</li>
-    </ul>
-    <p>THANK YOU FOR PURCHASING JOB PORTAL!<br />
-      Here are some basics on installing and configuring the Job Portal,<br />
-      BEFORE WE GO<br />
-      The code and the sample data is provided "as is". Customizing code and other design related issues can be done as freelance work on a $20-60 hourly rate only with Paypal and/or Skrill, if Job Portal available.<br />
-      If you are new to Progamming, please understand I cannot fix your site for free. We would love to help everyone but there is no time. I suggest reading documentation available online regarding using PHP, server requirements, etc. <br />
-      <br />
-      <strong>Thank you!</strong><br />
-      Job Portal Team</p>
-    
-    <h3>Overview</h3>
-    <ul>
-    <li>Job Seeker.</li>
-	<li>Job Provider.</li>
-	<li>Administrator.</li>
-	<li>Job Search.</li>
-    </ul>
-    
-    <h3>Table of Contents</h3>
-     <ul>
-    <li>PHP Code Explanation </li>
-    </ul>
-    
-    
-  </section>
-  <section id="install_quickstart">
-    <h3>Install Quickstart</h3>
-    <hr class="notop">
-    <p> The Quickstart Package consists on a complete Codeigntier + Database Files + Template + Various Modules + Sample Content, excellent for&nbsp;beginner users&nbsp;to explore back-end settings and sample content. Installing the Quickstart is just like installing and configuring PHP!, but you will have the full demo of the job portal on your server. Once your environment is ready, follow this quick guide:</p>
-    <ul>
-      <li> Localhost only: create a new folder in the <strong>htdocs</strong> folder for Xampp (<strong>www</strong> folder for Wamp). Example: <em>jobportal</em></li>
-      <li> Unpack all files and folders of the Package file and copy into this newly created folder (<strong>htdocs</strong> folder for Xampp / <strong>www</strong> folder for Wamp) or upload them into your sub-domain folder on your live site.</li>
-      <li> Open your favorite browser and type in the address bar <strong>localhost/<em>jobportal</em></strong> for localhost or <strong><em>sub-domain</em>.my-live-site.com</strong> for your live site sub-domain, then hit Enter.</li>
-    </ul>
-    <p>&nbsp; </p>
-  </section>
-  <section id="config">
-    <h3>Site Configuration</h3>
-    <hr class="notop">
-    
-    
-    <p>Go to the site folder (jobportal) and open the <strong>.htaccess</strong> file. Then update the <strong>RewriteBase</strong> accordingly (RewriteBase /jobportal/)</p>
-    <p> Go to <strong>jp_app/config</strong> folder, then open config.php file and update the <strong>$config['base_url']</strong> with your current localhost or live site URL (http://localhost/jobportal)</p>
-    <p> Go to <strong>jp_app/config</strong> folder, then open database.php file and update the database connection string with your current localhost or live database connection string.</p>
-    <h4> <strong>Database Set-up</strong></h4>
-    <strong>Method 1</strong>
-    <p> Open the file <strong>database_jobportal.sql</strong> in database folder of package files. Then create a new database in <strong>phpmyadmin</strong>. After that run this <strong>database_jobportal.sql</strong> file. It will create all required database tables and sample content.</p>
-    
-    <strong>Method 2</strong>
-    <p> Open the file <strong>database_jobportal.sql</strong> in editor. Then create a new database in <strong>phpmyadmin</strong>. After that copy databace from editor and run query in sql. It will create all required database tables and sample content.</p>
-    
-    <strong>Method 3</strong>
-    <p> Open the file <strong>database_jobportal.sql</strong> in database folder of package files. Then create a new database Connection in <strong>Navicat</strong>. After that run this <strong>database_jobportal.sql</strong> file. It will create all required database tables and sample content.</p>
-    
-    <hr>
-    
-    <h4>Chane Admin Email</h4>
-    <p>Change the administrator email address in "config/constants.php" file. (ADMIN_EMAIL)<br />
-    <strong>Note:</strong> You need to use a valid domain email address.</p>
-    <img src="assets/admin-email.jpg">
-<h4>Database Settings</h4>
-    <p>Open your site main root folder then open: <strong>jobportalfolder/jp_app/config/database.php</strong> Change your db name, username and password here,</p>
-    <img src="assets/database.jpg" />
-    <p>&nbsp; </p>
-    
-    <h4>Config</h4>
-    <p>Open your site main root folder then open: <strong>jobportalfolder/jp_app/config/config.php</strong> Change your site url here</p>
-    <img src="assets/config.jpg" />
-    <p>&nbsp; </p>
-    
-	 <h4>.htacces</h4>
-    <p>if you are installing it in subfolders please change: <strong>.htaccess file</strong> Change your site url here, in below image demo installed in wwww.domain.com/soft/jobportal</p>
-    <img src="assets/htaccess.png" />
-    <p>&nbsp; </p>
-	
-    
-    <h4>Admin URL / Access</h4>
-    <p>yourpath.com/admin<br />
-      user: <strong>demo</strong><br />
-      pass: <strong>demo123456</strong> </p>
-  </section>
-  <section id="header">
-    <h3>Header Adjustment</h3>
-    <hr class="notop">
-    <img src="assets/header.jpg" />
-    <p>Go to the site folder (jobportal) and open file <strong>jp_app\views\common\header.php</strong>. Here you can set logo, naviation and Account Buttons.</p>
-    <img src="assets/header-code.jpg" /> </section>
-  <section id="footer">
-    <h3>Footer</h3>
-    <hr class="notop">
-    <img src="assets/footer.jpg" />
-    <p>Go to the site folder (jobportal) and open file <strong>jp_app\views\common\footer.php</strong>.</p>
-    <h4>Manage Cities</h4>
-    <p>Just Add your desire ciites and put name in small letter in url.</p>
-    <img src="assets/footer-code.jpg"> </section>
-  <section id="ads">
-    <h3>Manage Ads</h3>
-    <hr class="notop">
-    <img src="assets/ads.jpg" />
-    <h4>Go to the admin side and click on Manage Ads on left menu. see screenshot below</h4>
-    <img src="assets/ad-admin.jpg"> </section>
-    <section id="admin">
-    <h3>Manage Admin</h3>
-    <hr class="notop">
-    
-    <p>Administrator can manage whole website:</p>
-<ul>
-  <li>Manage complete jobseeker section. Like: activate/deactivate/delete/ edit jobseeker's information.</li>
-  <li>Admin user can view the jobseeker's applications for each job.</li>
-  <li>Manage complete employer section. Admin user can activate/deactivate/delete/ edit company information. </li>
-  <li>Manage posted jobs. Like: activate/deactivate/delete/edit posted job.</li>
-  <li>Manage whole website content. Dynamic CMS is included to manage the content of the website.</li>
-  <li>Admin user can send message to any jobseeker or job provider.</li>
-  <li>Admin user can send bulk emails as well.</li>
-  <li>Admin user can manage the skills section. Like: Add or remove skills from the website.</li>
-  <li>Manage newsletters section</li>
-  <li>Manage success stories</li>
-  <li>Admin user can manage and handle the prohibited words for whole website.</li>
-  <li>Admin user can add/edit countries, cities, salaries range, qualification, institutes, job industries, website ads.</li>
-</ul>
-    
-    
-    <img src="assets/admin-panel.jpg" />
-    
-    
-    </section>
-    
-    <section id="updates">
-    	<h3>What's new</h3>
-        <br>
-        <strong>Update on: 27 November 2016</strong>
-    	<ul>
-        	<li>Update Theme</li>
-            <li>Add <strong>Salary</strong> in Search Filter</li>
-            <li>Add <strong>cities</strong> in search job</li>
-            <li>Make Sarch More Popular</li>
-            <li>Add facility to manage <strong>Nationality</strong> from admin</li>
-            <li>CMS pages <strong>SEO</strong> (meta keywords, title, description) setting added</li>
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <title>Job Portal Guide</title>
+    <meta name="description" content="THANK YOU FOR PURCHASING OUR JOB PORTAL!
+    Here are some basics on installing, configuring and customizing the job
+    portal, BEFORE WE GO The job portal and the sample data is provided "as is".
+    Customizing code and other design /development related issues can be done as
+    freelance work on a $20-50 hourly rate only with Paypal and/or Skrill, if
+    JobPortal's available. If you are new to programming, please understand I
+    cannot fix your site for free. Job Portal would love to help everyone but
+    there is no time. I suggest reading documentation available online regarding
+    using PHP, server requirements, etc. Thank you! Job Portal Team">
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <meta name="generator" content="Documenter v1.2" />
+    <meta name="date" content="2016-03-01T00:00:00+02:00" />
+    <link rel="stylesheet" href="css/documenter_style.css" media="all" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script src="js/jquery.1.6.4.js"></script>
+    <script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <link rel="stylesheet" href="css/shDocumenter.css" media="screen" />
+    <script src="js/shCore.js"></script>
+    <script src="js/shBrushXml.js"></script>
+    <script>
+      SyntaxHighlighter.defaults["toolbar"] = false;
+      SyntaxHighlighter.all();
+    </script>
+    <script>
+      document.createElement("section");
+      var duration = 500,
+        easing = "swing";
+    </script>
+    <script src="js/script.js"></script>
+    <style>
+      html {
+        background-color: #ffffff;
+        color: #383838;
+      }
+      ::-moz-selection {
+        background: #444444;
+        color: #dddddd;
+      }
+      ::selection {
+        background: #444444;
+        color: #dddddd;
+      }
+      #documenter_sidebar #documenter_logo {
+        background-image: url(assets/logo.png);
+      }
+      a {
+        color: #0000ff;
+      }
+      hr {
+        border-top: 1px solid #ebebeb;
+        border-bottom: 1px solid #ffffff;
+      }
+      #documenter_sidebar,
+      #documenter_sidebar ol a {
+        background-color: #dddddd;
+        color: #222222;
+      }
+      #documenter_sidebar ol a {
+        -webkit-text-shadow: 1px 1px 0px #eeeeee;
+        -moz-text-shadow: 1px 1px 0px #eeeeee;
+        text-shadow: 1px 1px 0px #eeeeee;
+      }
+      #documenter_sidebar ol {
+        border-top: 1px solid #aaaaaa;
+      }
+      #documenter_sidebar ol a {
+        border-top: 1px solid #eeeeee;
+        border-bottom: 1px solid #aaaaaa;
+        color: #444444;
+      }
+      #documenter_sidebar ol a:hover {
+        background: #444444;
+        color: #dddddd;
+        border-top: 1px solid #444444;
+      }
+      #documenter_sidebar ol a.current {
+        background: #444444;
+        color: #dddddd;
+        border-top: 1px solid #444444;
+      }
+      #documenter_copyright {
+        display: block !important;
+        visibility: visible !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="documenter_sidebar">
+      <a href="#documenter_cover" id="documenter_logo"></a>
+      <ol id="documenter_nav">
+        <li><a class="current" href="#documenter_cover">Start</a></li>
+        <li><a href="#install_quickstart">Install Quickstart</a></li>
+        <li><a href="#config">Site Configuration</a></li>
+        <li><a href="#header">Hedaer</a></li>
+        <li><a href="#footer">Footer</a></li>
+        <li><a href="#ads">Manages Ads</a></li>
+        <li><a href="#admin">Admin Panel</a></li>
+        <li><a href="#updates">Updates</a></li>
+        <li><a href="#credits">Sources and Credits</a></li>
+      </ol>
+      <div id="documenter_copyright">Copyright &copy; 2016</div>
+    </div>
+    <div id="documenter_content">
+      <section id="documenter_cover">
+        <h1>Job Portal Guide</h1>
+        <hr />
+        <ul>
+          <li>Created: 12/03/2016</li>
+          <li>Updated: 24/08/2016</li>
+          <li>By: Bizz-manager</li>
+          <li>
+            Email: <a href="mailto:Sopstech@gmail.com"></a>Sopstech@gmail.com
+          </li>
         </ul>
-        
-        <hr>
-        
-    	<h3>Indeed Jobs Setting</h3>
-        <img src="assets/indeed.jpg">
-        <p>If you want to change indeed API key then Go to the site folder (jobportal) and open file <strong>jp_app\config\constants.php</strong>.</p>
-        <img src="assets/indeed-api.jpg">
-        
-        
-        
-    </section>
-    
-  <section id="credits">
-    <h3>Sources and Credits</h3>
-    <hr class="notop">
-    
-    
-    
-    We've used the following images, icons or other files as listed.
-    <ul>
-      <li>Icons: <a href="http://fortawesome.github.io/Font-Awesome/">Font-Awesome</a></li>
-      <li>Code Credits: codecanyon.net/user/codeareena</li>
-    </ul>
-    
-    
-    <h2>Conclusion</h2>
-    <p>This system has been developed successfully incorporate all the requirements. Appropriate care has taken during database design maintain database integrity and to avoid redundancy of data. This site was developed in such a way that any further modifications needed can be easily done. User feels freely while using this site. In this all technical complexities are hidden. This site is a more user friendly. The quality fusers like correctness, efficiency, usability, maintainability, portability, accuracy, errors, tolerance, expandability and communicatively all are successfully done.</p>
-    <h2>Foreseeable enhancements</h2>
-    <p>There is always a room for improvement in any software package, however good and efficient it may be. The important thing is that the website should be flexible enough for further modifications. Considering this important factor, the web site is designed in such a way that the provisions are given for further enhancements. At present this website provides all the information using static pages and reservation forms. In future we can enhance our project by providing options like. Include many sites information.</p>
-    
-    <hr class="notop">
-    <p>
-    Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on Codecanyon, you might consider visiting the forums and asking your question in the "Item Discussion" section.
-    <br /><br />
-    
-    <strong>Codeareena Team</strong>
-    </p>
-    
-    
-  </section>
-</div>
-</body>
+        <p>
+          THANK YOU FOR PURCHASING JOB PORTAL!<br />
+          Here are some basics on installing and configuring the Job Portal,<br />
+          BEFORE WE GO<br />
+          The code and the sample data is provided "as is". Customizing code and
+          other design related issues can be done as freelance work on a $20-60
+          hourly rate only with Paypal and/or Skrill, if Job Portal
+          available.<br />
+          If you are new to Progamming, please understand I cannot fix your site
+          for free. We would love to help everyone but there is no time. I
+          suggest reading documentation available online regarding using PHP,
+          server requirements, etc. <br />
+          <br />
+          <strong>Thank you!</strong><br />
+          Job Portal Team
+        </p>
+
+        <h3>Overview</h3>
+        <ul>
+          <li>Job Seeker.</li>
+          <li>Job Provider.</li>
+          <li>Administrator.</li>
+          <li>Job Search.</li>
+        </ul>
+
+        <h3>Table of Contents</h3>
+        <ul>
+          <li>PHP Code Explanation</li>
+        </ul>
+      </section>
+      <section id="install_quickstart">
+        <h3>Install Quickstart</h3>
+        <hr class="notop" />
+        <p>
+          The Quickstart Package consists on a complete Codeigntier + Database
+          Files + Template + Various Modules + Sample Content, excellent
+          for&nbsp;beginner users&nbsp;to explore back-end settings and sample
+          content. Installing the Quickstart is just like installing and
+          configuring PHP!, but you will have the full demo of the job portal on
+          your server. Once your environment is ready, follow this quick guide:
+        </p>
+        <ul>
+          <li>
+            Localhost only: create a new folder in the
+            <strong>htdocs</strong> folder for Xampp (<strong>www</strong>
+            folder for Wamp). Example: <em>jobportal</em>
+          </li>
+          <li>
+            Unpack all files and folders of the Package file and copy into this
+            newly created folder (<strong>htdocs</strong> folder for Xampp /
+            <strong>www</strong> folder for Wamp) or upload them into your
+            sub-domain folder on your live site.
+          </li>
+          <li>
+            Open your favorite browser and type in the address bar
+            <strong>localhost/<em>jobportal</em></strong> for localhost or
+            <strong><em>sub-domain</em>.my-live-site.com</strong> for your live
+            site sub-domain, then hit Enter.
+          </li>
+        </ul>
+        <p>&nbsp;</p>
+      </section>
+      <section id="config">
+        <h3>Site Configuration</h3>
+        <hr class="notop" />
+
+        <p>
+          Go to the site folder (jobportal) and open the
+          <strong>.htaccess</strong> file. Then update the
+          <strong>RewriteBase</strong> accordingly (RewriteBase /jobportal/)
+        </p>
+        <p>
+          Go to <strong>jp_app/config</strong> folder, then open config.php file
+          and update the <strong>$config['base_url']</strong> with your current
+          localhost or live site URL (http://localhost/jobportal)
+        </p>
+        <p>
+          Go to <strong>jp_app/config</strong> folder, then open database.php
+          file and update the database connection string with your current
+          localhost or live database connection string.
+        </p>
+        <h4><strong>Database Set-up</strong></h4>
+        <strong>Method 1</strong>
+        <p>
+          Open the file <strong>database_jobportal.sql</strong> in database
+          folder of package files. Then create a new database in
+          <strong>phpmyadmin</strong>. After that run this
+          <strong>database_jobportal.sql</strong> file. It will create all
+          required database tables and sample content.
+        </p>
+
+        <strong>Method 2</strong>
+        <p>
+          Open the file <strong>database_jobportal.sql</strong> in editor. Then
+          create a new database in <strong>phpmyadmin</strong>. After that copy
+          databace from editor and run query in sql. It will create all required
+          database tables and sample content.
+        </p>
+
+        <strong>Method 3</strong>
+        <p>
+          Open the file <strong>database_jobportal.sql</strong> in database
+          folder of package files. Then create a new database Connection in
+          <strong>Navicat</strong>. After that run this
+          <strong>database_jobportal.sql</strong> file. It will create all
+          required database tables and sample content.
+        </p>
+
+        <hr />
+
+        <h4>Chane Admin Email</h4>
+        <p>
+          Change the administrator email address in "config/constants.php" file.
+          (ADMIN_EMAIL)<br />
+          <strong>Note:</strong> You need to use a valid domain email address.
+        </p>
+        <img src="assets/admin-email.jpg" />
+        <h4>Database Settings</h4>
+        <p>
+          Open your site main root folder then open:
+          <strong>jobportalfolder/jp_app/config/database.php</strong> Change
+          your db name, username and password here,
+        </p>
+        <img src="assets/database.jpg" />
+        <p>&nbsp;</p>
+
+        <h4>Config</h4>
+        <p>
+          Open your site main root folder then open:
+          <strong>jobportalfolder/jp_app/config/config.php</strong> Change your
+          site url here
+        </p>
+        <img src="assets/config.jpg" />
+        <p>&nbsp;</p>
+
+        <h4>.htacces</h4>
+        <p>
+          if you are installing it in subfolders please change:
+          <strong>.htaccess file</strong> Change your site url here, in below
+          image demo installed in wwww.domain.com/soft/jobportal
+        </p>
+        <img src="assets/htaccess.png" />
+        <p>&nbsp;</p>
+
+        <h4>Admin URL / Access</h4>
+        <p>
+          yourpath.com/admin<br />
+          user: <strong>demo</strong><br />
+          pass: <strong>demo123456</strong>
+        </p>
+      </section>
+      <section id="header">
+        <h3>Header Adjustment</h3>
+        <hr class="notop" />
+        <img src="assets/header.jpg" />
+        <p>
+          Go to the site folder (jobportal) and open file
+          <strong>jp_app\views\common\header.php</strong>. Here you can set
+          logo, naviation and Account Buttons.
+        </p>
+        <img src="assets/header-code.jpg" />
+      </section>
+      <section id="footer">
+        <h3>Footer</h3>
+        <hr class="notop" />
+        <img src="assets/footer.jpg" />
+        <p>
+          Go to the site folder (jobportal) and open file
+          <strong>jp_app\views\common\footer.php</strong>.
+        </p>
+        <h4>Manage Cities</h4>
+        <p>Just Add your desire ciites and put name in small letter in url.</p>
+        <img src="assets/footer-code.jpg" />
+      </section>
+      <section id="ads">
+        <h3>Manage Ads</h3>
+        <hr class="notop" />
+        <img src="assets/ads.jpg" />
+        <h4>
+          Go to the admin side and click on Manage Ads on left menu. see
+          screenshot below
+        </h4>
+        <img src="assets/ad-admin.jpg" />
+      </section>
+      <section id="admin">
+        <h3>Manage Admin</h3>
+        <hr class="notop" />
+
+        <p>Administrator can manage whole website:</p>
+        <ul>
+          <li>
+            Manage complete jobseeker section. Like: activate/deactivate/delete/
+            edit jobseeker's information.
+          </li>
+          <li>
+            Admin user can view the jobseeker's applications for each job.
+          </li>
+          <li>
+            Manage complete employer section. Admin user can
+            activate/deactivate/delete/ edit company information.
+          </li>
+          <li>
+            Manage posted jobs. Like: activate/deactivate/delete/edit posted
+            job.
+          </li>
+          <li>
+            Manage whole website content. Dynamic CMS is included to manage the
+            content of the website.
+          </li>
+          <li>Admin user can send message to any jobseeker or job provider.</li>
+          <li>Admin user can send bulk emails as well.</li>
+          <li>
+            Admin user can manage the skills section. Like: Add or remove skills
+            from the website.
+          </li>
+          <li>Manage newsletters section</li>
+          <li>Manage success stories</li>
+          <li>
+            Admin user can manage and handle the prohibited words for whole
+            website.
+          </li>
+          <li>
+            Admin user can add/edit countries, cities, salaries range,
+            qualification, institutes, job industries, website ads.
+          </li>
+        </ul>
+
+        <img src="assets/admin-panel.jpg" />
+      </section>
+
+      <section id="updates">
+        <h3>What's new</h3>
+        <br />
+        <strong>Update on: 27 November 2016</strong>
+        <ul>
+          <li>Update Theme</li>
+          <li>Add <strong>Salary</strong> in Search Filter</li>
+          <li>Add <strong>cities</strong> in search job</li>
+          <li>Make Sarch More Popular</li>
+          <li>
+            Add facility to manage <strong>Nationality</strong> from admin
+          </li>
+          <li>
+            CMS pages <strong>SEO</strong> (meta keywords, title, description)
+            setting added
+          </li>
+        </ul>
+
+        <hr />
+
+        <h3>Indeed Jobs Setting</h3>
+        <img src="assets/indeed.jpg" />
+        <p>
+          If you want to change indeed API key then Go to the site folder
+          (jobportal) and open file
+          <strong>jp_app\config\constants.php</strong>.
+        </p>
+        <img src="assets/indeed-api.jpg" />
+      </section>
+
+      <section id="credits">
+        <h3>Sources and Credits</h3>
+        <hr class="notop" />
+
+        We've used the following images, icons or other files as listed.
+        <ul>
+          <li>
+            Icons:
+            <a href="http://fortawesome.github.io/Font-Awesome/"
+              >Font-Awesome</a
+            >
+          </li>
+          <li>Code Credits: codecanyon.net/user/codeareena</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>
+          This system has been developed successfully incorporate all the
+          requirements. Appropriate care has taken during database design
+          maintain database integrity and to avoid redundancy of data. This site
+          was developed in such a way that any further modifications needed can
+          be easily done. User feels freely while using this site. In this all
+          technical complexities are hidden. This site is a more user friendly.
+          The quality fusers like correctness, efficiency, usability,
+          maintainability, portability, accuracy, errors, tolerance,
+          expandability and communicatively all are successfully done.
+        </p>
+        <h2>Foreseeable enhancements</h2>
+        <p>
+          There is always a room for improvement in any software package,
+          however good and efficient it may be. The important thing is that the
+          website should be flexible enough for further modifications.
+          Considering this important factor, the web site is designed in such a
+          way that the provisions are given for further enhancements. At present
+          this website provides all the information using static pages and
+          reservation forms. In future we can enhance our project by providing
+          options like. Include many sites information.
+        </p>
+
+        <hr class="notop" />
+        <p>
+          Once again, thank you so much for purchasing this theme. As I said at
+          the beginning, I'd be glad to help you if you have any questions
+          relating to this theme. No guarantees, but I'll do my best to assist.
+          If you have a more general question relating to the themes on
+          Codecanyon, you might consider visiting the forums and asking your
+          question in the "Item Discussion" section.
+          <br /><br />
+
+          <strong>Codeareena Team</strong>
+        </p>
+      </section>
+    </div>
+  </body>
 </html>

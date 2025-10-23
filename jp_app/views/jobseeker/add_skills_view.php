@@ -71,7 +71,7 @@ $style = ($count_skills>2)?'wrap_enable':'wrap_disable';
               </div>
               <div class="<?php echo $style;?>">
               <div class="col-md-2">
-                <input type="button" onClick="document.location='<?php echo base_url('jobseeker/cv_manager/?a=d');?>'" name="finish" id="finish" value="Finish" class="btn btn-primary" />
+                <input type="button" onClick="document.location='<?php echo base_url('jobportal/jobseeker/cv_manager/?a=d');?>'" name="finish" id="finish" value="Finish" class="btn btn-primary" />
               </div>
               </div>
             </div>

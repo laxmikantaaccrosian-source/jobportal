@@ -50,12 +50,12 @@ class Add_subscription extends CI_Controller {
 		$data_array = array(
 			'seeker_ID' => $this->session->userdata('user_id'),
 			'subscription_type' => 'premium',
-			'amount' => 1000.00,
+			'amount' => 99.00,
 			'start_date' => date('Y-m-d H:i:s'),
 			'end_date' => date('Y-m-d H:i:s', strtotime('+1 year')),
 			'status' => 'active',
 			'payment_method' => $this->input->post('payment_method'),
-			'transaction_id' => 'TXN'.time().rand(1000,9999)
+			'transaction_id' => 'TXN'.time().rand(100,99)
 		);
 		
 		if($this->subscription_model->add($data_array)){

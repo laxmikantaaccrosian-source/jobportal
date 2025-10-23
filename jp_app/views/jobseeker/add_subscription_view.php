@@ -176,6 +176,7 @@
                   <li><i class="fa fa-check-circle"></i> Upload your resume</li>
                   <li><i class="fa fa-check-circle"></i> Receive job alerts</li>
                   <li><i class="fa fa-check-circle"></i> Basic skill management</li>
+                  <li><i class="fa fa-check-circle"></i> Receive Interview Calls</li>
                   <li><i class="fa fa-check-circle"></i> Track your applications</li>
                   <li><i class="fa fa-check-circle"></i> Access to job board</li>
                 </ul>
@@ -203,14 +204,14 @@
                   </span>
                   <div class="plan-title">Premium Membership</div>
                   <div class="plan-price premium-price">
-                    <span class="currency">₹</span>1,000
-                    <span class="period">/ Year</span>
+                    <span class="currency"></span>Contact Us
+                    <!-- <span class="currency">₹</span>99
+                    <span class="period">/ Year</span> -->
                   </div>
                 </div>
                 
                 <ul class="features-list">
-                  <li class="premium-feature"><i class="fa fa-star"></i> <strong>100% Job Assurance Guarantee</strong></li>
-                  <li class="premium-feature"><i class="fa fa-star"></i> <strong>Guaranteed Interview Calls</strong></li>
+                  <li class="premium-feature"><i class="fa fa-star"></i> <strong>100% Job Assurance</strong></li>
                   <li class="premium-feature"><i class="fa fa-star"></i> Priority job matching</li>
                   <li class="premium-feature"><i class="fa fa-star"></i> Direct employer connections</li>
                   <li class="premium-feature"><i class="fa fa-star"></i> Resume highlighted to employers</li>
@@ -221,12 +222,16 @@
                   <li class="premium-feature"><i class="fa fa-star"></i> All basic features included</li>
                 </ul>
                 
-                <?php if(!$has_premium): ?>
-                <div class="highlight-box">
-                  <strong><i class="fa fa-shield"></i> 100% Job Placement Guarantee!</strong>
+                <?php 
+                // if(!$has_premium): 
+                ?>
+                <!-- <div class="highlight-box">
+                  <strong><i class="fa fa-shield"></i>Placement Guarantee!</strong>
                   <p style="margin: 10px 0 0 0; font-size: 13px;">Get guaranteed interviews and dedicated support until you land your dream job.</p>
-                </div>
-                <?php endif; ?>
+                </div> -->
+                <?php
+                //  endif; 
+                ?>
                 
                 <div style="text-align: center; margin-top: 25px;">
                   <?php if($has_premium): ?>
@@ -242,7 +247,7 @@
                   </div>
                   <?php else: ?>
                   <button class="btn btn-warning btn-lg" id="subscribe-btn" style="width: 80%; font-size: 18px;">
-                    <i class="fa fa-credit-card"></i> Subscribe Now
+                    <i class="fa fa-credit-card"></i> Contact Us
                   </button>
                   <?php endif; ?>
                 </div>
@@ -260,11 +265,11 @@
                 <div class="row">
                   <div class="col-md-4">
                     <h5><i class="fa fa-briefcase" style="color: #f0ad4e;"></i> Job Assurance</h5>
-                    <p style="font-size: 13px;">Our premium members get 100% job placement guarantee with dedicated support throughout the process.</p>
+                    <p style="font-size: 13px;">Our premium members get job placement Assurance with dedicated support throughout the process.</p>
                   </div>
                   <div class="col-md-4">
                     <h5><i class="fa fa-phone" style="color: #f0ad4e;"></i> Interview Guarantee</h5>
-                    <p style="font-size: 13px;">Get guaranteed interview calls from top companies matching your profile and skills.</p>
+                    <p style="font-size: 13px;">Get interview calls from top companies matching your profile and skills.</p>
                   </div>
                   <div class="col-md-4">
                     <h5><i class="fa fa-users" style="color: #f0ad4e;"></i> Priority Support</h5>

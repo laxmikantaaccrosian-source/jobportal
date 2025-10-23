@@ -145,6 +145,32 @@
     line-height: 1.8;
     color: #444;
 }
+.download-btn {
+    background: #17a2b8;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+.download-btn:hover {
+    background: #138496;
+    color: #fff;
+    text-decoration: none;
+}
+.notification-section {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+</style>
 </style>
 </head>
 <body>
@@ -209,14 +235,14 @@
             <div class="detail-value-col"><?php echo $job->age_limit;?></div>
           </div>
           
-          <?php if($job->qualification): ?>
+          <?php if(!empty($job->qualification)): ?>
           <div class="detail-row">
             <div class="detail-label-col">Qualification:</div>
             <div class="detail-value-col"><?php echo $job->qualification;?></div>
           </div>
           <?php endif;?>
           
-          <?php if($job->salary): ?>
+          <?php if(!empty($job->salary)): ?>
           <div class="detail-row">
             <div class="detail-label-col">Salary/Pay Scale:</div>
             <div class="detail-value-col"><?php echo $job->salary;?></div>
@@ -225,11 +251,27 @@
         </div>
         
         <!-- Job Description -->
-        <?php if($job->job_description): ?>
+        <?php if(!empty($job->job_description)): ?>
         <div class="details-section">
           <h3>Job Description</h3>
           <div class="description-content">
             <?php echo nl2br($job->job_description);?>
+          </div>
+        </div>
+        <?php endif;?>
+
+        <!-- Download Notification -->
+        <?php if(!empty($job->official_notification)): ?>
+        <div class="details-section">
+          <h3>Official Notification</h3>
+          <div class="notification-section">
+            <p>Download the official notification for more details:</p>
+            <a href="<?php echo base_url('public/uploads/notifications/'.$job->official_notification);?>" target="_blank" class="download-btn">
+              <i class="fa fa-download"></i> Download Official Notification
+            </a>
+            <p class="text-muted" style="margin-top: 10px; font-size: 12px;">
+              <small>File: <?php echo $job->official_notification;?></small>
+            </p>
           </div>
         </div>
         <?php endif;?>
@@ -247,27 +289,23 @@
         </div>
         <?php endif;?>
         
-        <!-- Download Notification -->
-         <?php if(!empty($job->official_notification) && file_exists('./public/uploads/notifications/'.$job->official_notification)): ?>
-        <div class="details-section">
-          <h3>Official Notification</h3>
-          <a href="<?php echo base_url('public/uploads/notifications/'.$job->official_notification);?>" target="_blank" class="btn btn-info">
-            <i class="fa fa-download"></i> Download Official Notification (PDF)
-          </a>
-        </div>
-        <?php endif;?>
+        
         
       </div>
       
     </div>
     
-    <?php $this->load->view('common/right_ads');?>
+    <?php 
+    // $this->load->view('common/right_ads');
+    ?>
   </div>
 </div>
 </div>
 <!--/Job Detail Block-->
 
-<?php $this->load->view('common/bottom_ads');?>
+<?php 
+// $this->load->view('common/bottom_ads');
+?>
 
 <!--Footer-->
 <?php $this->load->view('common/footer'); ?>

@@ -79,7 +79,7 @@
                   <th width="10%">Apply Date</th>
                   <th width="10%">Last Date</th>
                   <th width="8%">Vacancy</th>
-                  <th width="8%">Status</th>
+                  <!-- <th width="8%">Status</th> -->
                   <th width="14%">Actions</th>
                 </tr>
               </thead>
@@ -102,11 +102,13 @@
                   <td><?php echo date('M d, Y', strtotime($job->apply_date));?></td>
                   <td><?php echo date('M d, Y', strtotime($job->last_date));?></td>
                   <td><?php echo $job->total_vacancy;?></td>
-                  <td>
+                  <!-- <td>
                     <span class="job-status-<?php echo $job->status;?>">
-                      <?php echo ucfirst($job->status);?>
+                      <?php 
+                      // echo ucfirst($job->status);
+                      ?>
                     </span>
-                  </td>
+                  </td> -->
                   <td>
                     <a href="<?php echo base_url('government-jobs/detail/'.$job->slug);?>" 
                        class="btn btn-info btn-xs" target="_blank" title="View">
@@ -114,13 +116,13 @@
                     </a>
                     <a href="<?php echo base_url('admin/government-jobs/edit/'.$job->id);?>" 
                        class="btn btn-warning btn-xs" title="Edit">
-                      <i class="fa fa-edit"></i>
+                      <i class="fa fa-edit" style="color: white;">Edit</i>
                     </a>
                     <a href="<?php echo base_url('admin/government-jobs/delete/'.$job->id);?>" 
                        class="btn btn-danger btn-xs" 
                        onclick="return confirm('Are you sure you want to delete this job?');" 
                        title="Delete">
-                      <i class="fa fa-trash"></i>
+                      <i class="fa fa-trash" style="color: white;">Delete</i>
                     </a>
                   </td>
                 </tr>
