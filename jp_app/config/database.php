@@ -46,10 +46,10 @@
 */
 $active_group = 'local';
 $active_record = TRUE;
-$db['local']['hostname'] = '127.0.0.1';
-$db['local']['username'] = 'u321770099_job';
-$db['local']['password'] = 'Accrosian123';
-$db['local']['database'] = 'u321770099_job';
+$db['local']['hostname'] = 'localhost';
+$db['local']['username'] = 'root';
+$db['local']['password'] = '';
+$db['local']['database'] = 'job_portal_db';
 $db['local']['dbdriver'] = 'mysqli';
 $db['local']['dbprefix'] = '';
 $db['local']['pconnect'] = TRUE;

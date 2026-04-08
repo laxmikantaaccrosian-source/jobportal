@@ -15,7 +15,7 @@
 */
 
 
-$config['base_url']	= 'https://jobportal.accrosian.com/';
+$config['base_url']	= 'http://localhost/jobportal/';
 /*
 |--------------------------------------------------------------------------
 | Index File
