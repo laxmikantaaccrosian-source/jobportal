@@ -53,12 +53,12 @@
     <div class="col-md-4">
       <h5>Popular Cities</h5>
       <ul class="citiesList">
-        <li><a href="<?php echo base_url('search/new-york');?>" title="Jobs in new-york">New-york</a></li>
-        <li><a href="<?php echo base_url('search/los-angeles');?>" title="Jobs in Los-angeles">Los-angeles</a></li>
-        <li><a href="<?php echo base_url('search/chicago');?>" title="Jobs in Chicago">Chicago</a></li>
-        <li><a href="<?php echo base_url('search/houston');?>" title="Jobs in houston">Houston</a></li>
-        <li><a href="<?php echo base_url('search/san-diego');?>" title="Jobs in san-diego">San-diego</a></li>
-        <li><a href="<?php echo base_url('search/san-jose');?>" title="Jobs in san-jose">San-jose</a></li>
+        <li><a href="<?php echo base_url('search/bhubaneswar');?>" title="Jobs in Bhubaneswar">Bhubaneswar</a></li>
+        <li><a href="<?php echo base_url('search/banglore');?>" title="Jobs in Banglore">Banglore</a></li>
+        <li><a href="<?php echo base_url('search/hyderabad');?>" title="Jobs in Hyderabad">Hyderabad</a></li>
+        <li><a href="<?php echo base_url('search/mumbai');?>" title="Jobs in Mumbai">Mumbai</a></li>
+        <li><a href="<?php echo base_url('search/chennai');?>" title="Jobs in Chennai">Chennai</a></li>
+        <li><a href="<?php echo base_url('search/kollkata');?>" title="Jobs in Kollkata">Kollkata</a></li>
         <li><a href="<?php echo base_url('search/austin');?>" title="Jobs in austin">Austin</a></li>
         <li><a href="<?php echo base_url('search/san-francisco');?>" title="Jobs in san-francisco">San-francisco</a></li>
         <li><a href="<?php echo base_url('search/columbus');?>" title="Jobs in columbus">Columbus</a></li>
